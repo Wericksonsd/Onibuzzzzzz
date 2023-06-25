@@ -56,6 +56,23 @@ header{
     padding-left: 15px;
     min-width: 100%;
     font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.btn{
+    min-width: 100%;
+}
+
+.botao{
+    background-color: blueviolet;
+    color: rgb(238, 195, 229);
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 0;
+    min-width: 30%;
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 
