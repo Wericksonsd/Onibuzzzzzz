@@ -9,16 +9,15 @@
 
 <body>
     <div class="tela">
-        <header></header>
         <div class="login">
             <h3>LOGUE COM SUAS INFORMAÇÕES</h3>
-            <p>CPF</p>
+            <p>NOME</p>
             <input type="text" class="ipt" name="Cpf" id="cpf">
             <p>SENHA</p>
-            <input type="password" class="ipt" name="Cpf" id="cpf">
+            <input type="password" class="ipt" name="Senha" id="senha">
             <div class="btn">
-                <input type="button" class="botao" value="ENVIAR">
-                <input type="button" id="login" class="botao" value="ESQUECI A SENHA">
+                <input type="submit" id="logar" class="botao" value="ENVIAR" onclick="login(); return false">
+                <input type="submit" id="login" class="botao" value="ESQUECI A SENHA">
             </div>
             <p id="crie">Ou crie sua conta clicando </br> <span id="aqui">AQUI!</span></p>
         </div>
@@ -28,7 +27,10 @@
     </div>
 
     <script>
-        
+        function login(){
+            location.href = "horarios.html";
+        }
+
     </script>    
 </body>
 </html>

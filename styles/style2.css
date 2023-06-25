@@ -33,18 +33,10 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-header{
-    height: 350px;
-    background-image: url(/imgs/LOGO.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .login{
     background-color: var(--rox);
     color: var(--bra);
+    margin-top: 20px;
     max-width: 428px;
     height: 400px;
     border-radius: 10px;
@@ -65,67 +57,67 @@ header{
     min-height: 50px;
     padding-left: 15px;
     min-width: 100%;
-    font-size: 1.2em;
     margin-top: 3px;
-    margin-bottom: 15px;
-}
-
-.btn{
-    min-width: 100%;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.botao{
-    background-color: var(--rox2);
-    color: var(--cin);
-    padding: 8px 20px;
+#horario{
+    height: 100px;
+    font-size: 2.2em;
+}
+
+.hora{    
+    font-size: 2em;    
+    display: flex;
+    align-items: center;
+}
+
+#check{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: var(--rox);
+    background-color: var(--amr);
+    border: 2px;
     border-radius: 5px;
-    border: 0;
-    min-width: 30%;
-    min-height: 50px;
-    font-weight: 700;
-    font-size: 1.5em;
 }
 
-#logar:hover{
-    background-color: var(--cin);
+#check>p{    
+    font-size: 7em;
+    font-weight: 900;
+}
+
+
+#rodape{
+    margin-top: 15px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+}
+
+#aviso{
+    width: 80%;
+    height: 50px;
     color: var(--rox);
-    cursor: pointer;
-}
-
-#login{
-    background-color: var(--cin);
-    color: var(--rox);
-    font-size: 1em;
-}
-
-#login:hover{
-    background-color: aliceblue;
-    cursor: pointer;
-}
-
-#crie{
-    text-align: center;
-    margin-top: 20px;
+    background-color: var(--amr);
+    border: 2px;
+    border-radius: 5px;
     font-size: 1.2em;
-    line-height: 1.5em;
-}
-
-#aqui{
-    text-align: center;
-    padding: 5px;
-    background-color: var(--cin);
-    color: var(--rox);
-    border-radius: 3px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 footer{
-    height: 25%;
+    height: 18%;
     background-image: url("/imgs/Untitled-1.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: 140%;
     margin: 0 -15px;
     margin-top: 20px;
