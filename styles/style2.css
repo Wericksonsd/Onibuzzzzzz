@@ -134,6 +134,8 @@ footer>p{
 
 
 .popup {
+    height: 50vh;
+    width: 80vw;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -143,5 +145,21 @@ footer>p{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: none;
+    display: non;
 }
+
+#pontoTab>ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+#pontoTab li{
+    font-weight: 700;
+    color: var(--rox2);
+    margin-top: 30px;
+    font-size: 2em;
+}
+
