@@ -72,6 +72,8 @@ body{
     font-size: 2em;    
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding: 5px;
 }
 
 #check{
@@ -132,7 +134,6 @@ footer>p{
     font-weight: 600;
 }
 
-
 .popup {
     height: 50vh;
     width: 80vw;
@@ -145,7 +146,7 @@ footer>p{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: non;
+    display: none;
 }
 
 #pontoTab>ul{
@@ -161,5 +162,44 @@ footer>p{
     color: var(--rox2);
     margin-top: 30px;
     font-size: 2em;
+}
+
+#pontoTab li:hover{
+    color: var(--rox);
+    font-size: 2.1em;
+    cursor: pointer;
+}
+
+#periodoTab{
+    height: 30vh;
+}
+
+#periodoTab>ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+#periodoTab li{
+    font-weight: 700;
+    color: var(--rox2);
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+#periodoTab li:hover{
+    color: var(--rox);
+    font-size: 2.1em;
+    cursor: pointer;
+}
+
+.elementos{
+    text-align: center;
+}
+
+#ruaaa{
+    font-size: 0.7em;
 }
 
