@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="popup" id="periodoTab">
+        <ul>
+            <li>MATUTINO</li>
+            <li>VESPERTINO</li>
+            <li>NOTURNO</li>
+        </ul>
+    </div>
+
+    <div class="popup" id="pontoTab">
+        <ul>
+            <li>PONTO 1</li>
+            <li>PONTO 2</li>
+            <li>PONTO 3</li>
+            <li>PONTO 4</li>
+            <li>PONTO 5</li>
+        </ul>
+    </div>
+
     <div class="tela" >
         <div class="login" style="height: 90vh;">
             <p>HORÁRIO</p>
@@ -14,11 +32,11 @@
                 <p class="hora">PONTO 1</p>
             </div>
             <p>PONTO</p>
-            <div class="ipt">
+            <div id="ponto" class="ipt" onclick="popupPonto()">
                 <p class="hora">MATUTINO</p>
             </div>
             <p>PERÍODO</p>
-            <div class="ipt">
+            <div id="periodo" class="ipt">
                 <p class="hora">0:00</p>
             </div>
 
@@ -31,5 +49,9 @@
             <p>Desenvolvido por Equipe <span class="negr">Bala-Bala</span></p>
         </footer>
     </div>
+
+    <script>
+        
+    </script>
 </body>
 </html>
