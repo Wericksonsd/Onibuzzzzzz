@@ -45,7 +45,7 @@
 
             <div id="check"><p id="simb">!</p><p style="font-size: 2em; font-weight: 600;" id="avisooo">CHECAR</p></div>
 
-            <div id="rodape"><button id="aviso">ENVIAR AVISO</button></div>
+            <div id="rodape"><button id="aviso" onclick="aviso()">ENVIAR AVISO</button></div>
             
         </div>
         <footer>
@@ -55,7 +55,8 @@
 
     <script>
         var ponto = 0;
-        var periodo = "periodo";
+        var periodo = "periodo";        
+        var toque = 0;
 
         function popupPonto() {
             const pontoTab = document.getElementById('pontoTab');
@@ -144,9 +145,89 @@
                     case 1:
                         switch (ponto){
                             case 1:
+                                horaa.textContent = '06:00';
+                            break;
+                            case 2:
+                                horaa.textContent = '06:15';
+                            break;
+                            case 3:
+                                horaa.textContent = '06:30';
+                            break;
+                            case 4:
+                                horaa.textContent = '07:40';
+                            break;
+                            case 5:
+                                horaa.textContent = '07:00';
+                            break;
+                            case 6:
                                 horaa.textContent = '07:15';
+                            break;
                         }
+                    break;
+
+                    case 2:
+                        switch (ponto){
+                            case 1:
+                                horaa.textContent = '11:00';
+                            break;
+                            case 2:
+                                horaa.textContent = '11:15';
+                            break;
+                            case 3:
+                                horaa.textContent = '11:30';
+                            break;
+                            case 4:
+                                horaa.textContent = '11:40';
+                            break;
+                            case 5:
+                                horaa.textContent = '12:00';
+                            break;
+                            case 6:
+                                horaa.textContent = '12:15';
+                            break;
+                        }
+                    break;
+
+                    case 3:
+                        switch (ponto){
+                            case 1:
+                                horaa.textContent = '17:00';
+                            break;
+                            case 2:
+                                horaa.textContent = '17:15';
+                            break;
+                            case 3:
+                                horaa.textContent = '17:30';
+                            break;
+                            case 4:
+                                horaa.textContent = '17:40';
+                            break;
+                            case 5:
+                                horaa.textContent = '18:00';
+                            break;
+                            case 6:
+                                horaa.textContent = '18:15';
+                            break;
+                        }
+                    break;
                 }
+
+                
+            }
+        }
+    
+        function aviso(){
+            var aviso = document.getElementById('aviso');
+            if(toque == 0){
+                toque = 1;
+                aviso.textContent = 'ENVIADO';
+                aviso.style.backgroundColor = 'var(--cin)';
+                aviso.style.color = 'var(--rox2)';                
+            } else if(toque == 1){
+                toque= 0;
+                aviso.textContent = 'ACEITO';
+                aviso.style.backgroundColor = 'var(--rox2)';
+                aviso.style.color = 'var(--amr)';  
             }
         }
     </script>
